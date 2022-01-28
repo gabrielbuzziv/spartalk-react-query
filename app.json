@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "react-query-spartalks",
+    "slug": "react-query-spartalks",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "react-query-spartalks"
+}
