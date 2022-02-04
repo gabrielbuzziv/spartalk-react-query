@@ -3,7 +3,7 @@
 This project was a used to on Spartalk (a tech talk on Spartlabs) to introduce React Query Lib.
 It compares a default and casual list vs a React Query list of totos items.
 
-![Project Example](./github/example.png)
+![Project Example](./github/example.gif)
 
 ## Table of Contents
 
