@@ -6,8 +6,8 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 import { ReactQueryMain } from '../screens/ReactQuery/Main';
+import { Challenge } from '../screens/Challenge/Main';
 import { DefaultMain } from '../screens/Default/Main';
-import { SpartalkMain } from '../screens/Spartalk/Main';
 
 const { Navigator, Screen } = createBottomTabNavigator();
 
@@ -17,7 +17,7 @@ export const AppNavigation: React.FC = () => {
       <Navigator>
         <Screen
           name="Default"
-          component={ReactQueryMain}
+          component={DefaultMain}
           options={{
             tabBarIcon: props => (
               <MaterialCommunityIcons name="layers" {...props} />
@@ -26,7 +26,7 @@ export const AppNavigation: React.FC = () => {
         />
         <Screen
           name="ReactQuery"
-          component={DefaultMain}
+          component={ReactQueryMain}
           options={{
             tabBarIcon: props => (
               <MaterialCommunityIcons name="react" {...props} />
@@ -34,11 +34,11 @@ export const AppNavigation: React.FC = () => {
           }}
         />
         <Screen
-          name="Spartalk"
-          component={SpartalkMain}
+          name="Challenge"
+          component={Challenge}
           options={{
             tabBarIcon: props => (
-              <MaterialCommunityIcons name="football-helmet" {...props} />
+              <MaterialCommunityIcons name="star" {...props} />
             ),
           }}
         />
